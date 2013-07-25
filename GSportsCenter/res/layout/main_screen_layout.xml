@@ -1,0 +1,39 @@
+<arm.developer.gsportscenter.mainscreen.DashboardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="@drawable/radial_background" >
+
+    <!-- Sport Venues Button -->
+
+    <Button
+        android:id="@+id/btnSportVenues"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/button_sport_venues"
+        android:text="@string/button_sport_venues" />
+
+    <!-- Classes -->
+
+    <Button
+        android:id="@+id/btnSportClasses"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/button_sport_classes"
+        android:text="@string/button_sport_classes" />
+
+    <!-- G Pro Shop -->
+
+    <Button
+        android:id="@+id/btnGproShop"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/button_gpro_shop"
+        android:text="@string/button_gpro_shop" />
+
+    <!-- Zone Cafe -->
+
+    <Button
+        android:id="@+id/btnZoneCafe"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/button_zone_cafe"
+        android:text="@string/button_zone_cafe" />
+
+</arm.developer.gsportscenter.mainscreen.DashboardLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="arm.developer.gsportscenter"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
+        <activity
+            android:name="arm.developer.gsportscenter.splashscreen.SplashScreen"
+            android:label="@string/app_actionbar_name"
+            android:theme="@style/Theme.Sherlock.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="arm.developer.gsportscenter.mainscreen.MainScreen"
+            android:label="@string/app_actionbar_name"
+            android:theme="@style/Theme.ABSRed" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </activity>
+
+        <!-- RESERVATION -->
+        <activity
+            android:name="arm.developer.gsportscenter.reservation.Reservation"
+            android:label="@string/app_actionbar_name"
+            android:theme="@style/Theme.ABSRed" >
+        </activity>
+        <activity
+            android:name="arm.developer.gsportscenter.reservation.ReservationTwitter"
+            android:label="@string/app_actionbar_name"
+            android:theme="@style/Theme.ABSRed" >
+        </activity>
+
+        <!-- MAIN CONTENT -->
+        <activity
+            android:name="arm.developer.gsportscenter.content.SportVenues"
+            android:label="@string/app_actionbar_name"
+            android:theme="@style/Theme.ABSRed" >
+        </activity>
+        <activity
+            android:name="arm.developer.gsportscenter.content.SportClasses"
+            android:label="@string/app_actionbar_name"
+            android:theme="@style/Theme.ABSRed" >
+        </activity>
+
+        <!-- VENUES -->
+        <activity
+            android:name="arm.developer.gsportscenter.venues.Golf"
+            android:label="@string/app_actionbar_name"
+            android:theme="@style/Theme.ABSRed" >
+        </activity>
+        <activity
+            android:name="arm.developer.gsportscenter.venues.Futsal"
+            android:label="@string/app_actionbar_name"
+            android:theme="@style/Theme.ABSRed" >
+        </activity>
+        <activity
+            android:name="arm.developer.gsportscenter.venues.Pool"
+            android:label="@string/app_actionbar_name"
+            android:theme="@style/Theme.ABSRed" >
+        </activity>
+        <activity
+            android:name="arm.developer.gsportscenter.venues.Badminton"
+            android:label="@string/app_actionbar_name"
+            android:theme="@style/Theme.ABSRed" >
+        </activity>
+        <activity
+            android:name="arm.developer.gsportscenter.venues.Gym"
+            android:label="@string/app_actionbar_name"
+            android:theme="@style/Theme.ABSRed" >
+        </activity>
+        <activity
+            android:name="arm.developer.gsportscenter.venues.Aerobic"
+            android:label="@string/app_actionbar_name"
+            android:theme="@style/Theme.ABSRed" >
+        </activity>
+
+        <!-- PRICING -->
+        <activity
+            android:name="arm.developer.gsportscenter.pricing.Golf"
+            android:label="@string/app_actionbar_name"
+            android:theme="@style/Theme.ABSRed" >
+        </activity>
+        <activity
+            android:name="arm.developer.gsportscenter.pricing.Futsal"
+            android:label="@string/app_actionbar_name"
+            android:theme="@style/Theme.ABSRed" >
+        </activity>
+        <activity
+            android:name="arm.developer.gsportscenter.pricing.Pool"
+            android:label="@string/app_actionbar_name"
+            android:theme="@style/Theme.ABSRed" >
+        </activity>
+
+        <!-- CLASSES -->
+    </application>
+
+</manifest>
