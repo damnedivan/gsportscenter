@@ -52,12 +52,12 @@
 
         <!-- MAIN CONTENT -->
         <activity
-            android:name="arm.developer.gsportscenter.content.SportVenues"
+            android:name="arm.developer.gsportscenter.content.VenuesTable"
             android:label="@string/app_actionbar_name"
             android:theme="@style/Theme.ABSRed" >
         </activity>
         <activity
-            android:name="arm.developer.gsportscenter.content.SportClasses"
+            android:name="arm.developer.gsportscenter.content.ClassesTable"
             android:label="@string/app_actionbar_name"
             android:theme="@style/Theme.ABSRed" >
         </activity>

@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 import arm.developer.gsportscenter.R;
-import arm.developer.gsportscenter.content.SportVenues;
+import arm.developer.gsportscenter.content.VenuesTable;
 import arm.developer.gsportscenter.reservation.Reservation;
 
 import com.actionbarsherlock.app.ActionBar;
@@ -79,7 +79,7 @@ public class Golf extends SherlockActivity {
 		if (item.getItemId() == android.R.id.home) {
 
 			Intent i = new Intent();
-			i.setClass(Golf.this, SportVenues.class);
+			i.setClass(Golf.this, VenuesTable.class);
 			i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 			startActivity(i);
 

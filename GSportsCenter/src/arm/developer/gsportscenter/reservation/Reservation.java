@@ -22,7 +22,7 @@ import arm.developer.gsportscenter.R;
 import arm.developer.gsportscenter.arrayadapter.AdapterDurasi;
 import arm.developer.gsportscenter.arrayadapter.AdapterJam;
 import arm.developer.gsportscenter.arrayadapter.AdapterVenues;
-import arm.developer.gsportscenter.content.SportVenues;
+import arm.developer.gsportscenter.content.VenuesTable;
 
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockActivity;
@@ -141,7 +141,7 @@ public class Reservation extends SherlockActivity {
 		if (item.getItemId() == android.R.id.home) {
 
 			Intent i = new Intent();
-			i.setClass(Reservation.this, SportVenues.class);
+			i.setClass(Reservation.this, VenuesTable.class);
 			i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 			startActivity(i);
 

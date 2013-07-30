@@ -10,8 +10,8 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
 import arm.developer.gsportscenter.R;
-import arm.developer.gsportscenter.content.SportClasses;
-import arm.developer.gsportscenter.content.SportVenues;
+import arm.developer.gsportscenter.content.ClassesTable;
+import arm.developer.gsportscenter.content.VenuesTable;
 
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
@@ -61,7 +61,7 @@ public class MainScreen extends SherlockActivity implements OnClickListener {
 
 			Intent iv = new Intent();
 			iv.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-			iv.setClass(MainScreen.this, SportVenues.class);
+			iv.setClass(MainScreen.this, VenuesTable.class);
 			startActivity(iv);
 
 			break;
@@ -70,7 +70,7 @@ public class MainScreen extends SherlockActivity implements OnClickListener {
 
 			Intent ic = new Intent();
 			ic.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-			ic.setClass(MainScreen.this, SportClasses.class);
+			ic.setClass(MainScreen.this, ClassesTable.class);
 			startActivity(ic);
 
 			break;
