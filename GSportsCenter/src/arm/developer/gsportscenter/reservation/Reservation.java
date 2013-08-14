@@ -152,6 +152,13 @@ public class Reservation extends SherlockActivity {
 			AlertDialog.Builder d = new AlertDialog.Builder(Reservation.this);
 			d.setCancelable(true);
 			d.setTitle("Konfirmasi");
+			d.setMessage("Venue :" + spnVenues.getSelectedItem().toString());
+			d.setMessage("Nama :" + etNama.getText().toString());
+			d.setMessage("Alamat :" + etAlamat.getText().toString());
+			d.setMessage("Telepon :" + etTelepon.getText().toString());
+			d.setMessage("Tanggal :" + tvTanggal.getText().toString());
+			d.setMessage("Jam :" + spnJam.getSelectedItem().toString());
+			d.setMessage("Durasi :" + spnDurasi.getSelectedItem().toString());
 			d.setMessage("Apakah data anda sudah benar dan yakin melakukan reservasi?");
 			d.setPositiveButton("Ya", new DialogInterface.OnClickListener() {
 
